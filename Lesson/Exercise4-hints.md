@@ -43,7 +43,7 @@ minimum_values = row[value_columns].min()
 It is also possible to find out which column contains that value by applying [`.idxmin()`](http://pandas.pydata.org/pandas-docs/version/0.18.1/generated/pandas.DataFrame.idxmin.html) -function:
 
 ```
-# Find out which column has the contains the minimum value
+# Find out which column contains the minimum value
 minimum_values = row[value_columns].idxmin()
 ```
 
