@@ -17,6 +17,17 @@ http://blogs.helsinki.fi/accessibility/helsinki-region-travel-time-matrix-2015/)
 Here we are reading multiple files from a folder. We could write the filepaths to all of those files but **it is not efficient!** 
 Instead, you should use `glob()` -function from module glob to get a filtered list of those files that you want to read and then read the files by iterating over the list. There are lesson materials about doing this in [**here**](https://github.com/Python-for-geo-people/Lesson-5-Reading-Writing/blob/master/Lesson/reading-multiple-files.md#list-files).
 
+#### Renaming column based on 'to_id' value
+
+We want to rename our column from `pt_r_tt` into `pt_r_tt_XXXXXXX` where XXXXXX is a `to_id` of our datafile which is identical for every row. How you should proceed this problem is following:
+
+ - Extract a **single** value from `to_id` column into a variable called `destination` ==> you might want to use .loc[] functionality of Pandas
+ - Convert the integer value of 'destination' variable as **string**
+ - Rename the `pt_r_tt` value:
+   
+    - Parse the new column name where you combine `pt_r_tt` text and text from `destination` variable into a new variable called `new_name`. See [lesson materials]().
+    - Rename the `pt_r_tt` column using value from `new_name` variable. Use `data.rename()` -function. 
+
 #### Finding out which shopping center is the closest
 
 We can find out the minimum value from multiple columns simply by applying a `.min()` function to those columns of a row that we are interessted in:
