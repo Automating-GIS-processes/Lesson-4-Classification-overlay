@@ -12,6 +12,13 @@ http://blogs.helsinki.fi/accessibility/helsinki-region-travel-time-matrix-2015/)
 
 ### Problem 2:
 
+**General steps**:
+
+ 1. Read the files and prepare a single DataFrame where you have travel times for all shopping centers
+ 2. Find out for each row what is the minimum travel time from those shopping centers
+ 3. Find out for each row what is the column name of that shopping center that had the minimum travel time
+ 4. Make maps from the results
+
 #### Reading multiple files efficiently
 
 Here we are reading multiple files from a folder. We could write the filepaths to all of those files but **it is not efficient!** 
