@@ -12,5 +12,22 @@ http://blogs.helsinki.fi/accessibility/helsinki-region-travel-time-matrix-2015/)
 
 ### Problem 2:
 
+#### Finding out which shopping center is the closest
 
+We can find out the minimum value from multiple columns simply by applying a `.min()` function to those columns of a row that we are interessted in:
+
+```
+# Define the columns that are used in the query
+value_columns = ['center1', 'center2', 'center3']
+
+# Find out the minimum value of those column of a given row in the DataFrame
+minimum_values = row[value_columns].min()
+```
+
+It is also possible to find out which column contains that value by applying [`.idxmin()`](http://pandas.pydata.org/pandas-docs/version/0.18.1/generated/pandas.DataFrame.idxmin.html) -function:
+
+```
+# Find out which column has the contains the minimum value
+minimum_values = row[value_columns].idxmin()
+```
 
