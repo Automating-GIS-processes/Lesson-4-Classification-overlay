@@ -12,6 +12,11 @@ http://blogs.helsinki.fi/accessibility/helsinki-region-travel-time-matrix-2015/)
 
 ### Problem 2:
 
+#### Reading multiple files efficiently
+
+Here we are reading multiple files from a folder. We could write the filepaths to all of those files but **it is not efficient!** 
+Instead, you should use `glob()` -function from module glob to get a filtered list of those files that you want to read and then read the files by iterating over the list. There are lesson materials about doing this in [**here**](https://github.com/Python-for-geo-people/Lesson-5-Reading-Writing/blob/master/Lesson/reading-multiple-files.md#list-files).
+
 #### Finding out which shopping center is the closest
 
 We can find out the minimum value from multiple columns simply by applying a `.min()` function to those columns of a row that we are interessted in:
