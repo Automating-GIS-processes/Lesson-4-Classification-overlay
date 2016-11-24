@@ -25,8 +25,8 @@ We want to rename our column from `pt_r_tt` into `pt_r_tt_XXXXXXX` where XXXXXX 
  - Convert the integer value of 'destination' variable as **string**
  - Rename the `pt_r_tt` value:
    
-    - Parse the new column name where you combine `pt_r_tt` text and text from `destination` variable into a new variable called `new_name`. See [lesson materials]().
-    - Rename the `pt_r_tt` column using value from `new_name` variable. Use `data.rename()` -function. 
+    - Parse the new column name where you combine `pt_r_tt` text and text from `destination` variable into a new variable called `new_name`. See [a hint from earlier materials](https://github.com/Python-for-geo-people/Exercise-3#general-tips).
+    - Rename the `pt_r_tt` column using value from `new_name` variable. Use `data.rename()` -function. See [lesson materials](https://automating-gis-processes.github.io/2016/Lesson3-spatial-join.html?highlight=rename#download-and-clean-the-data). 
 
 #### Finding out which shopping center is the closest
 
