@@ -51,8 +51,8 @@ It is also possible to find out which column contains that value by applying [`.
 
 ```
 # Find out which column contains the minimum value
-minimum_values = row[value_columns].idxmin()
+closest_center = row[value_columns].idxmin()
 ```
 
-In order to calculate the resluts for each row, you can take advantage of the `.iterrows()` and `.loc()` -functions in (geo)pandas. See example from [Lesson 2 materials](https://automating-gis-processes.github.io/2016/Lesson2-geopandas-basics.html?highlight=loc#geometries-in-geopandas)
+In order to calculate the resuults for each row, you can take advantage of the `.iterrows()` and `.loc()` -functions in (geo)pandas. See example from [Lesson 2 materials](https://automating-gis-processes.github.io/2016/Lesson2-geopandas-basics.html?highlight=loc#geometries-in-geopandas)
 
